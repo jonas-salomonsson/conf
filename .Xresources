@@ -1,0 +1,143 @@
+! Xft settings
+Xft.dpi:		96
+Xft.antialias:		true
+Xft.rgba:		rgb
+Xft.hinting:		true
+Xft.hintstyle:		hintslight
+Xft.autohint:		0
+Xft.lcdfilter:		lcddefault
+
+! URxvt settings
+URxvt.depth:		32
+URxvt.geometry:		120x30
+URxvt.saveLines:	1000
+URxvt.transparent:	true
+URxvt.shading:		18
+URxvt.fading:		50
+URxvt.fadeColor:	#cccccc
+URxvt.dynamicColors:	on
+URxvt.lineSpace:	0
+URxvt.internalBorder:	3
+
+! Fonts
+!*allow_bold:	true
+!*font: xft: Adobe Helvetica: style=Regular: pixelsize=12
+!*font: xft: DejaVu Sans: style=Black, Regular: pixelsize=12
+!*boldFont: xft: DejaVu Sans: style=Book: pixelsize=14
+URxvt.font:		xft:DejavuSansMono:pixelsize=14
+! Fix font space
+!*letterSpace: -3
+
+! Colors in manuals
+URxvt.colorIT:		#87af5f
+URxvt.colorBD:		#d7d7d7
+URxvt.colorUL:		#87afd7
+
+! Pointer
+URxvt.pointerBlank:	true
+
+! Scrollbar
+URxvt.scrollStyle:	rxvt
+URxvt.scrollBar:	false
+
+! Perl extensions
+URxvt.perl-ext-common:	default,matcher,tabbedex,resize-font
+URxvt.url-launcher:	firefox
+URxvt.matcher.button:	1
+URxvt.matcher.rend.0:	Uline Bold fg5
+
+! URxvt colors
+URxvt.foreground:   #ebebeb
+URxvt.background:   #222222
+URxvt.cursorColor:  #ebebeb
+URxvt.color0:       #222222
+URxvt.color8:       #111111
+URxvt.color1:       #eb0000
+URxvt.color9:       #ab0000
+URxvt.color2:       #aaeb00
+URxvt.color10:      #66aa00
+URxvt.color3:       #eebb00
+URxvt.color11:      #aa7700
+URxvt.color4:       #00aaeb
+URxvt.color12:      #0066aa
+URxvt.color5:       #ebaaeb
+URxvt.color13:      #aa66aa
+URxvt.color6:       #00ebeb
+URxvt.color14:      #00aaaa
+URxvt.color7:       #ebebeb
+URxvt.color15:      #fafafa
+
+#define S_base03        #002b36
+#define S_base02        #073642
+#define S_base01        #586e75
+#define S_base00        #657b83
+#define S_base0         #839496
+#define S_base1         #93a1a1
+#define S_base2         #eee8d5
+#define S_base3         #fdf6e3
+
+vim*background:            S_base03
+vim*foreground:            S_base0
+vim*fadeColor:             S_base03
+vim*cursorColor:           S_base1
+vim*pointerColorBackground:S_base01
+vim*pointerColorForeground:S_base1
+
+#define S_yellow        #b58900
+#define S_orange        #cb4b16
+#define S_red           #dc322f
+#define S_magenta       #d33682
+#define S_violet        #6c71c4
+#define S_blue          #268bd2
+#define S_cyan          #2aa198
+#define S_green         #859900
+
+!! black dark/light
+*color0:                S_base02
+*color8:                S_base03
+
+!! red dark/light
+*color1:                S_red
+*color9:                S_orange
+
+!! green dark/light
+*color2:                S_green
+*color10:               S_base01
+
+!! yellow dark/light
+*color3:                S_yellow
+*color11:               S_base00
+
+!! blue dark/light
+*color4:                S_blue
+*color12:               S_base0
+
+!! magenta dark/light
+*color5:                S_magenta
+*color13:               S_violet
+
+!! cyan dark/light
+*color6:                S_cyan
+*color14:               S_base1
+
+!! white dark/light
+*color7:                S_base2
+*color15: S_base3
+
+!----------------- Tabbed ------------
+! Perl extention config
+!URxvt.perl-ext: tabbed
+! Any scripts placed here will override global ones with the same name
+!URxvt.perl-lib: /home/user/.urxvt/
+
+! Tabbed extension configuration
+!URxvt.tabbed.tabbar-fg:  7
+!URxvt.tabbed.tabbar-bg:  8
+!URxvt.tabbed.tab-fg:     15
+!URxvt.tabbed.tab-bg:     8
+!URxvt.tabbed.new-button: false
+
+URxvt.tabbed.tabbar-fg: 2
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg: 3
+URxvt.tabbed.tab-bg: 0

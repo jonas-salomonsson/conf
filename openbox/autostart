@@ -1,0 +1,5 @@
+xset -b
+nitrogen --restore &
+tint2 &
+VBoxClient-all &
+xrdb -load ~/.Xresources &
