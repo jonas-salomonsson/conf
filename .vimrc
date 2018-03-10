@@ -1,10 +1,10 @@
 execute pathogen#infect()
-call plug#begin('~/.vim/plugged')
-Plug 'junegunn/vim-github-dashboard.git'
-Plug 'faith/vim-go'
+"call plug#begin('~/.vim/plugged')
+"Plug 'junegunn/vim-github-dashboard.git'
+"Plug 'faith/vim-go'
 
 "let g:deoplete#enable_at_startup = 1
-call deoplete#enable()
+"call deoplete#enable()
 
 set encoding=utf-8
 
@@ -13,11 +13,11 @@ set tabstop=4
 set shiftwidth=4
 set t_Co=256
 
-syntax on
+syntax enable
 
 "let g:solarized_termcolors=256
-colorscheme solarized
 set background=dark
+colorscheme solarized
 
 if &term =~ '256color'
     " disable Background Color Erase (BCE) so that color schemes
@@ -38,3 +38,6 @@ set splitright
 
 set relativenumber
 set number
+
+" Enable saving protected file when opened without sudo using :W
+command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
