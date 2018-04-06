@@ -1,3 +1,5 @@
+let g:powerline_pycmd="py3"
+
 execute pathogen#infect()
 "call plug#begin('~/.vim/plugged')
 "Plug 'junegunn/vim-github-dashboard.git'
